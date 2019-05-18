@@ -19,9 +19,9 @@ class App extends Component {
     return (
       <React.Fragment>
       <Particle />
-        {/* <div className="name">
+        <div className="name">
           <Name/>
-        </div> */}
+        </div>
       </React.Fragment>
     );
   }
