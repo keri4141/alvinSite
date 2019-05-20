@@ -10,7 +10,7 @@ class Navbar extends Component {
         <div  className="menu-section">
         <div className="menu-toggle">
           <div className="one"></div>
-          <div class="two"></div>
+          <div className="two"></div>
           <div className="three"></div>
         </div>
         <nav>
