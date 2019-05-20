@@ -1,0 +1,15 @@
+.container {
+  background-color: #eaebed;
+  height: 100vh;
+  width: 100vw;
+}
+
+.name {
+  text-align: center;
+}
+
+.link {
+  position: relative;
+  z-index: 1;
+  text-align: center;
+}

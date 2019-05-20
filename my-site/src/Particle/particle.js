@@ -1,4 +1,4 @@
-import React , {Component, PureComponent} from 'react';
+import React , {Component} from 'react';
 import ParticleClass from './particleClass';
 import './particle.css';
 class Particle extends Component {
@@ -34,7 +34,7 @@ class Particle extends Component {
         this.height = this.myRef.current.height = window.innerHeight;
         this.mouse = { x: this.width * 0.5, y: this.height * 0.5 };
         this.ctx = this.myRef.current.getContext('2d');
-        for (let i = 0; i < 250; i++) {
+        for (let i = 0; i < 25; i++) {
           this.points[i] = new ParticleClass(Math.random() * this.width, Math.random() * this.height);
 
         }
