@@ -1,86 +1,48 @@
-.menu-toggle {
-    width: 40px;
-    height: 30px;
-    position: absolute;
-    top: 20px;
-    right: 40px;
-    cursor: pointer;
+.nav {
+  text-align: center;
+  position: absolute;
+  z-index: 2;
+}
+
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {
+    padding-top: 15px;
   }
-  .menu-toggle.on .one {
-    -moz-transform: rotate(45deg) translate(7px, 7px);
-    -ms-transform: rotate(45deg) translate(7px, 7px);
-    -webkit-transform: rotate(45deg) translate(7px, 7px);
-    transform: rotate(45deg) translate(7px, 7px);
+  .sidenav a {
+    font-size: 18px;
   }
-  .menu-toggle.on .two {
-    opacity: 0;
-  }
-  .menu-toggle.on .three {
-    -moz-transform: rotate(-45deg) translate(8px, -10px);
-    -ms-transform: rotate(-45deg) translate(8px, -10px);
-    -webkit-transform: rotate(-45deg) translate(8px, -10px);
-    transform: rotate(-45deg) translate(8px, -10px);
-  }
-  
-  .one,
-  .two,
-  .three {
-    width: 100%;
-    height: 5px;
-    background: black;
-    margin: 6px auto;
-    backface-visibility: hidden;
-    -moz-transition-duration: 0.3s;
-    -o-transition-duration: 0.3s;
-    -webkit-transition-duration: 0.3s;
-    transition-duration: 0.3s;
-  }
-  
-  nav ul {
-    margin: 0;
-    padding: 0;
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    border-bottom-left-radius:50%;
-    transform: translate(-50%,-50%);
-    font-family: Open Sans;
-    list-style: none;
-    text-align: center;
-    width: 100%;
-  }
-  nav ul.hidden {
-    display: none;
-  }
-  nav ul a {
-    -moz-transition-duration: 0.5s;
-    -o-transition-duration: 0.5s;
-    -webkit-transition-duration: 0.5s;
-    transition-duration: 0.5s;
-    text-decoration: none;
-    color: white;
-    font-size: 3em;
-    line-height: 1.5;
-    border-radius:50%;
-    width: 100%;
-    display: block;
-    font-family: sans-serif;
-  }
-  nav ul a:hover {
-    font-size:3.5em;
-  }
-  
-  .menu-section.on {
-    z-index: 10;
-    width: 100%;
-    height: 100%;
-    border-bottom-left-radius:50%;
-    display: block;
-    transition-delay: 0s;
-  transition-duration: 0.5s;
-  transition-property: all;
-  transition-timing-function: ease;
-    background-color: rgba(0, 0, 0, 0.5);
-    position: absolute;
-  }
-  
+}

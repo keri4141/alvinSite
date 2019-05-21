@@ -1,11 +1,11 @@
 import React, { Component } from "react";
 
-import "./Photography.css";
+import "./Films.css";
 
-class Photography extends Component {
+class Films extends Component {
   render() {
     return (
-      <div className=" photography container-fluid">
+      <div className=" films container-fluid">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam aliquet,
         purus vitae eleifend tristique, lorem magna volutpat orci, et vehicula
         erat erat nec elit. Aenean posuere nunc ac cursus facilisis. Aenean vel
@@ -14,4 +14,4 @@ class Photography extends Component {
     );
   }
 }
-export default Photography;
+export default Films;

@@ -8,13 +8,26 @@ import "./Home.css";
 class Home extends Component {
   render() {
     return (
-      <div className="container">
-        <div className="name">
-          <Name />
+      <div className=" home container-fluid">
+        <div className="row">
+          <div className="col">
+            <div className="name">
+              <Name />
+            </div>
+          </div>
         </div>
-        <div className="link">
-          <Link className="link-item" to="software">Software</Link>
-          <Link className="link-item" to="photography">Photography</Link>
+        <div className="row">
+          <div className="link col text-center">
+            <Link className="link-item" to="software">
+              Software
+            </Link>
+            <Link className="link-item" to="photography">
+              Photos
+            </Link>
+            <Link className="link-item" to="films">
+              Films
+            </Link>
+          </div>
         </div>
 
         <Particle />
